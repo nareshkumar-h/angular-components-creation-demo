@@ -9,6 +9,7 @@ ng g c fourth-component --inline-template
 ng g c fifth-component --view-encapsulation=None
 ng g c sixth-component --skipTests=true
 ng g c seventh-component --flat=true
+ng g c foldername/eighth-component
 ```
 Output:
 ```
@@ -58,4 +59,11 @@ CREATE src/app/seventh-component.component.spec.ts (699 bytes)
 CREATE src/app/seventh-component.component.ts (312 bytes)
 CREATE src/app/seventh-component.component.css (0 bytes)
 UPDATE src/app/app.module.ts (1125 bytes)
+
+D:\angular-training\components-demo>ng g c foldername/eighth-component
+CREATE src/app/foldername/eighth-component/eighth-component.component.html (31 bytes)
+CREATE src/app/foldername/eighth-component/eighth-component.component.spec.ts (692 bytes)
+CREATE src/app/foldername/eighth-component/eighth-component.component.ts (308 bytes)
+CREATE src/app/foldername/eighth-component/eighth-component.component.css (0 bytes)
+UPDATE src/app/app.module.ts (1257 bytes)
 ```

@@ -1,27 +1,61 @@
-# ComponentsDemo
+## Generate Components 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.4.
+#### Task 1: Generate a Component
+```
+ng generate component first-component
+ng g c second-component
+ng g c third-component --inline-style
+ng g c fourth-component --inline-template
+ng g c fifth-component --view-encapsulation=None
+ng g c sixth-component --skipTests=true
+ng g c seventh-component --flat=true
+```
+Output:
+```
 
-## Development server
+D:\angular-training\components-demo>ng generate component first-component
+CREATE src/app/first-component/first-component.component.html (30 bytes)
+CREATE src/app/first-component/first-component.component.spec.ts (685 bytes)
+CREATE src/app/first-component/first-component.component.ts (304 bytes)
+CREATE src/app/first-component/first-component.component.css (0 bytes)
+UPDATE src/app/app.module.ts (430 bytes)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+D:\angular-training\components-demo>ng g c second-component
+CREATE src/app/second-component/second-component.component.html (31 bytes)
+CREATE src/app/second-component/second-component.component.spec.ts (692 bytes)
+CREATE src/app/second-component/second-component.component.ts (308 bytes)
+CREATE src/app/second-component/second-component.component.css (0 bytes)
+UPDATE src/app/app.module.ts (550 bytes)
 
-## Code scaffolding
+D:\angular-training\components-demo>ng g c third-component --inline-style
+CREATE src/app/third-component/third-component.component.html (30 bytes)
+CREATE src/app/third-component/third-component.component.spec.ts (685 bytes)
+CREATE src/app/third-component/third-component.component.ts (268 bytes)
+UPDATE src/app/app.module.ts (666 bytes)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+D:\angular-training\components-demo>ng g c fourth-component --inline-template
+CREATE src/app/fourth-component/fourth-component.component.spec.ts (692 bytes)
+CREATE src/app/fourth-component/fourth-component.component.ts (322 bytes)
+CREATE src/app/fourth-component/fourth-component.component.css (0 bytes)
+UPDATE src/app/app.module.ts (786 bytes)
 
-## Build
+D:\angular-training\components-demo>ng g c fifth-component --view-encapsulation=None
+CREATE src/app/fifth-component/fifth-component.component.html (30 bytes)
+CREATE src/app/fifth-component/fifth-component.component.spec.ts (685 bytes)
+CREATE src/app/fifth-component/fifth-component.component.ts (364 bytes)
+CREATE src/app/fifth-component/fifth-component.component.css (0 bytes)
+UPDATE src/app/app.module.ts (902 bytes)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+D:\angular-training\components-demo>ng g c sixth-component --skipTests=true
+CREATE src/app/sixth-component/sixth-component.component.html (30 bytes)
+CREATE src/app/sixth-component/sixth-component.component.ts (304 bytes)
+CREATE src/app/sixth-component/sixth-component.component.css (0 bytes)
+UPDATE src/app/app.module.ts (1018 bytes)
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+D:\angular-training\components-demo>ng g c seventh-component --flat=true
+CREATE src/app/seventh-component.component.html (32 bytes)
+CREATE src/app/seventh-component.component.spec.ts (699 bytes)
+CREATE src/app/seventh-component.component.ts (312 bytes)
+CREATE src/app/seventh-component.component.css (0 bytes)
+UPDATE src/app/app.module.ts (1125 bytes)
+```
